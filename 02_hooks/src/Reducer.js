@@ -32,18 +32,18 @@ const ReducerComponent = () => {
       <h1 style={{ color: `rgb(${r}, ${g}, ${b})` }}>useReducer Example</h1>
       <div>
         <span>r</span>
-        <button onClick={() => dispatch({ type: "INCREMENT_R" })}>➕</button>
-        <button onClick={() => dispatch({ type: "DECREMENT_R" })}>➖</button>
+        <button onClick={() => dispatch({ type: "INCREMENT_R" })}>+</button>
+        <button onClick={() => dispatch({ type: "DECREMENT_R" })}>-</button>
       </div>
       <div>
         <span>g</span>
-        <button onClick={() => dispatch({ type: "INCREMENT_G" })}>➕</button>
-        <button onClick={() => dispatch({ type: "DECREMENT_G" })}>➖</button>
+        <button onClick={() => dispatch({ type: "INCREMENT_G" })}>+</button>
+        <button onClick={() => dispatch({ type: "DECREMENT_G" })}>-</button>
       </div>
       <div>
         <span>b</span>
-        <button onClick={() => dispatch({ type: "INCREMENT_B" })}>➕</button>
-        <button onClick={() => dispatch({ type: "DECREMENT_B" })}>➖</button>
+        <button onClick={() => dispatch({ type: "INCREMENT_B" })}>+</button>
+        <button onClick={() => dispatch({ type: "DECREMENT_B" })}>-</button>
       </div>
     </div>
   );

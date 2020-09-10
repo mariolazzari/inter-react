@@ -4,6 +4,7 @@ const LayoutEffectComponent = () => {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
   const el = useRef();
+  console.log(el);
 
   useLayoutEffect(() => {
     setWidth(el.current.clientWidth);

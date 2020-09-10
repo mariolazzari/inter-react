@@ -5,9 +5,9 @@ const UserContext = createContext([
     firstName: "Bob",
     lastName: "Bobberson",
     suffix: 1,
-    email: "bobbobberson@example.com"
+    email: "bobbobberson@example.com",
   },
-  obj => obj
+  (obj) => obj,
 ]);
 
 const LevelFive = () => {
@@ -53,7 +53,7 @@ const ContextComponent = () => {
     firstName: "James",
     lastName: "Jameson",
     suffix: 1,
-    email: "jamesjameson@example.com"
+    email: "jamesjameson@example.com",
   });
 
   return (

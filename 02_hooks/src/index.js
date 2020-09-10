@@ -12,29 +12,26 @@ import ImperativeHandle from "./ImperativeHandle";
 
 import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <State />
-      <hr />
-      <Effect />
-      <hr />
-      <Context />
-      <hr />
-      <Ref />
-      <hr />
-      <Reducer />
-      <hr />
-      <Memo />
-      <hr />
-      <Callback />
-      <hr />
-      <LayoutEffect />
-      <hr />
-      <ImperativeHandle />
-    </div>
-  );
-}
+const App = () =>
+  <div className="App">
+    <State />
+    <hr />
+    <Effect />
+    <hr />
+    <Context />
+    <hr />
+    <Ref />
+    <hr />
+    <Reducer />
+    <hr />
+    <Memo />
+    <hr />
+    <Callback />
+    <hr />
+    <LayoutEffect />
+    <hr />
+    <ImperativeHandle />
+  </div>;
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);

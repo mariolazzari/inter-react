@@ -2,7 +2,7 @@ import React, {
   useState,
   useRef,
   useImperativeHandle,
-  forwardRef
+  forwardRef,
 } from "react";
 
 const ElaborateInput = forwardRef(
@@ -12,14 +12,14 @@ const ElaborateInput = forwardRef(
       return {
         focus() {
           inputRef.current.focus();
-        }
+        },
       };
     });
     return (
       <input
         ref={inputRef}
         value={value}
-        onChange={e => update(e.target.value)}
+        onChange={(e) => update(e.target.value)}
         placeholder={placeholder}
         style={{
           padding: "5px 15px",
@@ -28,11 +28,11 @@ const ElaborateInput = forwardRef(
           borderColor: hasError ? "crimson" : "#999",
           borderRadius: "5px",
           margin: "0 10px",
-          textAlign: "center"
+          textAlign: "center",
         }}
       />
     );
-  }
+  },
 );
 
 const ImperativeHandleComponent = () => {
@@ -46,7 +46,7 @@ const ImperativeHandleComponent = () => {
     // lol I found it on StackOverflow : https://stackoverflow.com/a/25677072
     if (
       !/^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]+$/.test(
-        city
+        city,
       )
     ) {
       setError("city");

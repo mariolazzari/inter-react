@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 
-const fibonacci = n => {
+const fibonacci = (n) => {
   if (n <= 1) {
     return 1;
   }
@@ -24,7 +24,7 @@ const MemoComponent = () => {
       <h2>
         Fibonacci of {num} is {fib}
       </h2>
-      <button onClick={() => setNum(num + 1)}>➕</button>
+      <button onClick={() => setNum(num + 1)}>+</button>
     </div>
   );
 };
