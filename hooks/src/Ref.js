@@ -9,7 +9,7 @@ const RefComponent = () => {
     numRef.current++;
     setTimeout(
       () => alert(`state: ${stateNumber} | ref: ${numRef.current}`),
-      1000,
+      1000
     );
   }
 
